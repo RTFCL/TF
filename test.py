@@ -1,9 +1,4 @@
-# https://www.tensorflow.org/get_started/get_started
 import tensorflow as tf
-# http://scikit-learn.org/stable/tutorial/basic/tutorial.html
-from sklearn.datasets import fetch_20newsgroups
-
-fetch_20newsgroups()
 
 session = tf.Session()
 
