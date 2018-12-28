@@ -55,6 +55,8 @@ model = keras.Sequential([
     keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
 
+model.summary()
+
 # Compile network
 model.compile(
     # This is how the model is updated based on the data it sees and its loss function.
@@ -68,7 +70,11 @@ model.compile(
 )
 
 # Train model
-model.fit(train_images, train_labels, epochs=5)
+model.fit(
+    train_images,
+    train_labels,
+    epochs=5
+)
 
 # Evaluate accuracy
 test_loss, test_acc = model.evaluate(test_images, test_labels)
